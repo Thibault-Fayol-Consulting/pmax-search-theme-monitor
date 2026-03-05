@@ -1,30 +1,15 @@
 /**
  * --------------------------------------------------------------------------
- * PMax Search Theme Monitor - Google Ads Script for SMBs
+ * pmax-search-theme-monitor - Google Ads Script for SMBs
  * --------------------------------------------------------------------------
- * Extract Performance Max placement and search category data into a readable Google Sheet to monitor your spend.
- *
  * Author: Thibault Fayol - Consultant SEA PME
  * Website: https://thibaultfayol.com
  * License: MIT
  * --------------------------------------------------------------------------
  */
-
-var CONFIG = {
-  // CONFIGURATION HERE
-  TEST_MODE: true, // Set to false to apply changes
-  NOTIFICATION_EMAIL: "contact@yourdomain.com"
-};
-
+var CONFIG = { TEST_MODE: true, SPREADSHEET_URL: "https://docs.google.com/..." };
 function main() {
-  Logger.log("Starting PMax Search Theme Monitor...");
-  // Core Logic Here
-  
-  if (CONFIG.TEST_MODE) {
-    Logger.log("Test mode active: No changes will be applied.");
-  } else {
-    // Apply changes
-  }
-  
-  Logger.log("Finished.");
+    Logger.log("Fetching PMax Search Categories...");
+    var query = "SELECT campaign_search_term_insight.category_label, metrics.clicks FROM campaign_search_term_insight WHERE metrics.clicks > 0";
+    Logger.log("To fully use this, connect Google Sheets using SpreadsheetApp.");
 }
