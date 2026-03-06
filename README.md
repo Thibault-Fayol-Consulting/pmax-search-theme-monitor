@@ -16,6 +16,8 @@ Script Google Ads pour automatiser votre gestion SEA.
 Performance Max doesn't have to be a black box. Get visibility on where your money actually goes and cut wasteful spend.
 - **Keywords/SEO:** script placement performance max, pmax search categories script, script données performance max google ads
 
+> ⚠️ **Prerequisite**: This script exports data to a Google Sheet. You must create an empty Google Sheet and paste its URL into the `SPREADSHEET_URL` variable in the `CONFIG` object.
+
 ## ⚙️ Setup
 1. In **Google Ads → Tools & settings → Scripts → New script**.
 2. Paste the content of `main_en.gs`.
@@ -28,6 +30,8 @@ Performance Max doesn't have to be a black box. Get visibility on where your mon
 ## 🎯 Ce que fait le script
 Les PME se lancent sur PMax et perdent le contrôle. Ce script ressort un rapport clair montrant où va l'argent.
 - **Mots-clés/SEO :** script placement performance max, pmax search categories script, script données performance max google ads
+
+> ⚠️ **Prérequis** : Ce script exporte des données. Vous devez lier ce script à un document externe via la variable `SPREADSHEET_URL`.
 
 ## ⚙️ Installation
 1. Dans **Google Ads → Outils & paramètres → Scripts → Nouveau script**.
